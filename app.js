@@ -9,6 +9,8 @@ btns.forEach(function (btn) {
     const styles = e.currentTarget.classList
     if (styles.contains("decrease")) {
       count--
+    } else if (styles.contains("increase")) {
+      count++
     }
     value.textContent = count
   })
